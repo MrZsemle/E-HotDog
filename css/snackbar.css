@@ -1,0 +1,50 @@
+.snackbar {
+  min-width: 250px; 
+ 
+  background-color: rgb(37, 37, 37); 
+  color: rgb(255, 255, 255); 
+  text-align: right; 
+  border-radius: 2px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  right: 2%;
+  bottom: 30px;
+  border-radius: 10px;
+  font-size: 75%;
+}
+
+@media screen and (max-width: 992px) {
+  .snackbar {
+  max-width: 30%; 
+ 
+  background-color: rgb(37, 37, 37); 
+  color: rgb(255, 255, 255); 
+  text-align: right; 
+  border-radius: 2px; 
+  padding: 9px; 
+  position: fixed; 
+  z-index: 1; 
+  right: 2%;
+  bottom: 30px;
+  border-radius: 10px;
+  font-size: 60%;
+}
+}
+
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(243, 243, 243);
+}
+
+a:hover {
+  color: rgb(243, 243, 243);
+}
+
+a:active {
+  color: rgb(243, 243, 243);
+}

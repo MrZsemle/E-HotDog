@@ -1,0 +1,11 @@
+@import url(snackbar.css);
+@import url('https://rsms.me/inter/inter.css'); /* Font import*/
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body, html {
+  background: rgb(252, 252, 252);
+  font-family: 'Inter', sans-serif;
+  color: rgb(14, 14, 14);
+}
