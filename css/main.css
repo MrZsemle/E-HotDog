@@ -7,5 +7,23 @@
 body, html {
   background: rgb(252, 252, 252);
   font-family: 'Inter', sans-serif;
-  color: rgb(14, 14, 14);
+  color: rgb(19, 19, 19);
+}
+
+.hotdogdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotdog {
+  max-width: 50%;
+}
+
+.hotdog--top {
+  align-self: flex-start;
+}
+
+.hotdog--bottom {
+  align-self: flex-end;
 }

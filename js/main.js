@@ -1,10 +1,13 @@
 $(document).ready(function () {
     $(".snackbar").hide();
-    $(".hotdogcop").hover(function () {
-            $(".snackbar").slideDown();
+    $(".hotdog").hover(function () {
+            setTimeout(function () {
+                $(".snackbar").slideDown();
+             }, 5000); 
         }, function () {
-            $(".snackbar").slideUp();
+            setTimeout(function () {
+                $(".snackbar").slideUp();
+            }, 1500); 
         }
     );
-
 });
