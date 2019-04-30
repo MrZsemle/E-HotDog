@@ -74,10 +74,11 @@ a:active {
   width: 15%;
   height: 15%;
   user-select: none;
+  margin-top: calc(50vh - 219px);
 }
 
 .click {
-  
+
 }
 
 .stat {
@@ -88,6 +89,8 @@ a:active {
   position: fixed;
   font-size: 10px;
   color: rgb(221, 221, 221);
+  right: 10px;
+  text-align: right;
 }
 
 .animation {
