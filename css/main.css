@@ -71,14 +71,10 @@ a:active {
 }
 
 .hotdog {
-  width: 15%;
-  height: 15%;
+  width: 210px;
+  height: 210px;
   user-select: none;
-  margin-top: calc(50vh - 219px);
-}
-
-.click {
-
+  margin-top: calc(50vh - 210px / 1.5);
 }
 
 .stat {
@@ -112,4 +108,24 @@ a:active {
 
 .acr{
   animation: acr 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.copyright {
+  color: rgba(14, 14, 14, 0.350);
+  font-size: 50%;
+  cursor: default;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  left: calc(50% - 122px / 2);
+  bottom: 5%;
 }

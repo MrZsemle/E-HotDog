@@ -3,6 +3,7 @@ $(document).ready(function () {
     var i = 1;
     var ac
     var credit
+    var dark
 
     $(".snackbar").hide();
     $(".hotdog").hover(function () {
@@ -36,7 +37,7 @@ $(document).ready(function () {
         timeoutId = setTimeout(1000);
         var click = i++;
         console.log(click);
-        $(".click").text("Click: "+click);
+        $(".click").text("Click: " + click);
         $(this).removeClass("acr");
         $(this).addClass("ac");
         var ac = "Yes";
@@ -51,11 +52,7 @@ $(document).ready(function () {
         
     });
 
-    $(".hotdog").click(function (e) { 
-        
-    });
+    if (dark == true) {
+        console.log(true);
+    }
 });
-
-
-
-
