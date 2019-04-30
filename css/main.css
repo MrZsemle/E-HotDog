@@ -77,7 +77,16 @@ a:active {
 }
 
 .click {
-  color: #dddddd
+}
+
+.stat {
+  position: relative;
+}
+
+.stats {
+  position: fixed;
+  font-size: 10px;
+  color: rgb(221, 221, 221);
 }
 
 .animation {
