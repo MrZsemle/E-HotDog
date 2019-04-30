@@ -1,3 +1,4 @@
+@import url(animation.css);
 @import url('https://rsms.me/inter/inter.css'); /* Font import*/
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
@@ -70,7 +71,32 @@ a:active {
 }
 
 .hotdog {
-  width: 10%;
-  height: 10%;
+  width: 15%;
+  height: 15%;
   user-select: none;
+}
+
+.click {
+  color: #dddddd
+}
+
+.animation {
+	-webkit-animation: animation 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	animation: animation 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.a{
+  animation: a 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.ar{
+  animation: ar 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.ac{
+  animation: ac 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.acr{
+  animation: acr 0.4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
