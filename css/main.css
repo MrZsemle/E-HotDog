@@ -17,13 +17,7 @@ body, html {
 }
 
 .hotdog {
-  max-width: 50%;
-}
-
-.hotdog--top {
-  align-self: flex-start;
-}
-
-.hotdog--bottom {
-  align-self: flex-end;
+  width: 10%;
+  height: 10%;
+  user-select: none;
 }
