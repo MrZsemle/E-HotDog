@@ -3,23 +3,29 @@ $(document).ready(function () {
     var i = 1;
     var ac
     var credit
+    var creditcount
     var dark
 
     $(".snackbar").hide();
     $(".hotdog").hover(function () {
             setTimeout(function () {
-                $(".snackbar").slideDown();
-                var credit = "Yes";
-                $(".credit").text("Credits: " + credit+" (5 sec)");
-             }, 5000); 
+                    $(".snackbar").slideDown();
+                    var credit = "Yes";
+                    $(".credit").text("Credits: " + credit + " (10 sec)");
+                
+             }, 10000); 
         }, function () {
             setTimeout(function () {
                 $(".snackbar").slideUp();
                 var credit = "No"
-                $(".credit").text("Credits: " + credit + " (5 sec)");
+                $(".credit").text("Credits: " + credit + " (10 sec)");
             }, 1500); 
         }
     );
+
+
+
+
     var timeoutId = 0;
 
     $(".hotdog").hover(function () {
@@ -33,7 +39,7 @@ $(document).ready(function () {
         }
     );
 
-    $('.hotdog').on('mousedown', function () {
+    $('.hotdog').on('mousedown touchstart', function () {
         timeoutId = setTimeout(1000);
         var click = i++;
         console.log(click);
@@ -43,7 +49,7 @@ $(document).ready(function () {
         var ac = "Yes";
         $(".stat").text("Pressed: " + ac);
         
-    }).on('mouseup mouseleave', function () {
+    }).on('mouseup mouseleave touchend', function () {
         clearTimeout(timeoutId);
         $(this).removeClass("ac");
         $(this).addClass("acr");
@@ -52,7 +58,33 @@ $(document).ready(function () {
         
     });
 
-    if (dark == true) {
-        console.log(true);
-    }
+    $("html").on("contextmenu", function (e) {
+        return false;
+    });
+
+    $("html").on("keydown", function (e) {
+        if (event.which == "123") {
+            return false;
+        }
+    });
+
+    $("html").on("keydown", function () {
+        if (event.which == "68") {  
+            $("body, html").toggleClass("dark");
+            $(".stats").toggleClass("statsdark");
+            $(".copyright").toggleClass("copyrd");
+        }
+    });
+    
+    $("html").on("keydown", function () {
+        if (event.which == "13") {
+
+            
+
+            $(".hotdog").on("touchstart mousedown", function () {
+                $(".hotdog").draggable();
+            }).on("mouseup mouseleave touchend", function() {
+            })
+        }
+    });
 });

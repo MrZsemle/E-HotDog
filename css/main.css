@@ -8,6 +8,14 @@ body, html {
   background: rgb(252, 252, 252);
   font-family: 'Inter', sans-serif;
   color: rgb(19, 19, 19);
+  transition: background-color 0.2s;
+}
+
+.dark {
+  background: rgb(50, 54, 57);
+  color: rgb(84, 88, 91);
+  transition: background-color 0.2s;
+  
 }
 
 /*Snackbar css*/
@@ -75,6 +83,7 @@ a:active {
   height: 210px;
   user-select: none;
   margin-top: calc(50vh - 210px / 1.5);
+  cursor: pointer;
 }
 
 .stat {
@@ -87,6 +96,22 @@ a:active {
   color: rgb(221, 221, 221);
   right: 10px;
   text-align: right;
+  transition: color 0.2s;
+  display: block;
+  user-select: none;
+}
+
+.statsdark {
+  position: fixed;
+  font-size: 10px;
+  color: rgb(84, 88, 91);
+  right: 10px;
+  text-align: right;
+  transition: color 0.2s;
+}
+
+.credit {
+  position: relative;
 }
 
 .animation {
@@ -112,6 +137,17 @@ a:active {
 
 .copyright {
   color: rgba(14, 14, 14, 0.350);
+  font-size: 50%;
+  cursor: default;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.copyrd {
+  color: rgb(64, 68, 71);
   font-size: 50%;
   cursor: default;
   user-select: none;
