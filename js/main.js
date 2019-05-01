@@ -20,7 +20,7 @@ $(document).ready(function () {
             }, 1500); 
         }
     );*/
-    $(".material-icons").click(function (e) { 
+    $(".close").click(function (e) { 
             $(".snackbar").slideUp();
         });
 
@@ -83,5 +83,20 @@ $(document).ready(function () {
             }).on("mouseup mouseleave touchend", function() {
             })
         }
+    });
+
+    var elem = document.documentElement;
+
+    $(".fullscreen").click(function (e) { 
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { 
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { 
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { 
+            elem.msRequestFullscreen();
+        }
+        
     });
 });

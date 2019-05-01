@@ -37,7 +37,7 @@ body, html {
   flex-direction: row;
 }
 
-.material-icons {
+.close {
   transform: scale(0.8);
   margin-left: 20px;
   user-select: none;
@@ -126,8 +126,15 @@ a:active {
   transition: color 0.2s;
 }
 
-.credit {
-  position: relative;
+.fullscreen {
+  font-size: 30px;
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
+  right: 5%;
+  bottom: 5%;
+  position: fixed;
+  color: rgb(221, 221, 221);
 }
 
 .animation {
