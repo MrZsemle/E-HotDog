@@ -87,9 +87,6 @@ $(document).ready(function () {
     
     $("html").on("keydown", function () {
         if (event.which == "84") {
-
-            
-
             $(".hotdog").on("touchstart mousedown", function () {
                 $(".hotdog").draggable();
             }).on("mouseup mouseleave touchend", function() {
