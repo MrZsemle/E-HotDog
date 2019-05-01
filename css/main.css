@@ -81,6 +81,7 @@ a:active {
 .hotdog {
   width: 210px;
   height: 210px;
+  background: url(../img/hotdog.svg);
   user-select: none;
   margin-top: calc(50vh - 210px / 1.5);
   cursor: pointer;
@@ -169,12 +170,4 @@ a:active {
   text-align: center;
   left: calc(50% - 122px / 2);
   bottom: 5%;
-}
-
-::selection {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-::-moz-selection {
-  background-color: rgba(255, 255, 255, 0);
 }
