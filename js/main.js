@@ -2,20 +2,10 @@ $(document).ready(function () {
     var click = 0;
     var i = 1;
     var ac
-    var credit
-    var creditcount
     var dark
 
-    $("html").on("keydown", function (e) {
-        if (event.which == "82") {
-            var click =0;
-            console.log(34);
-        }
-    });
-
-
-    $(".snackbar").hide();
-    $(".hotdog").hover(function () {
+    $(".snackbar").show();
+    /*$(".hotdog").hover(function () {
             setTimeout(function () {
                     $(".snackbar").slideDown();
                     var credit = "Yes";
@@ -29,9 +19,10 @@ $(document).ready(function () {
                 $(".credit").text("Credits: " + credit + " (10 sec)");
             }, 1500); 
         }
-    );
-
-
+    );*/
+    $(".material-icons").click(function (e) { 
+            $(".snackbar").slideUp();
+        });
 
 
     var timeoutId = 0;

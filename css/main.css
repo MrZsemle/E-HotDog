@@ -20,7 +20,7 @@ body, html {
 
 /*Snackbar css*/
 .snackbar {
-  min-width: 250px; 
+  min-width: 300px; 
  
   background-color: rgb(37, 37, 37); 
   color: rgb(255, 255, 255); 
@@ -33,6 +33,16 @@ body, html {
   bottom: 30px;
   border-radius: 10px;
   font-size: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.material-icons {
+  transform: scale(0.8);
+  margin-left: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
@@ -90,8 +100,6 @@ a:active {
   -khtml-user-select: none; 
   -webkit-user-select: none; 
   -webkit-touch-callout: none;
-  filter: drop-shadow(8px 8px 40px rgba(0, 0, 0, 0.175));
-  
 }
 
 .stat {
@@ -170,6 +178,6 @@ a:active {
   position: fixed;
   bottom: 0;
   text-align: center;
-  left: calc(50% - 122px / 2);
+  left: calc(50% - 81.5px / 2);
   bottom: 5%;
 }
