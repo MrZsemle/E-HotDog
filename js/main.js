@@ -6,6 +6,14 @@ $(document).ready(function () {
     var creditcount
     var dark
 
+    $("html").on("keydown", function (e) {
+        if (event.which == "82") {
+            var click =0;
+            console.log(34);
+        }
+    });
+
+
     $(".snackbar").hide();
     $(".hotdog").hover(function () {
             setTimeout(function () {
@@ -68,6 +76,7 @@ $(document).ready(function () {
         }
     });
 
+    
     $("html").on("keydown", function () {
         if (event.which == "68") {  
             $("body, html").toggleClass("dark");
