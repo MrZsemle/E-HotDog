@@ -81,7 +81,7 @@ a:active {
 .hotdog {
   width: 210px;
   height: 210px;
-  background: url(img/hotdog.svg);
+  background: url(https://mrzsemle.github.io/E-HotDog/img/hotdog.svg);
   user-select: none;
   margin-top: calc(50vh - 210px / 1.5);
   cursor: pointer;
