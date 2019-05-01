@@ -145,7 +145,7 @@ a:active {
 
 .copyright {
   color: rgba(14, 14, 14, 0.350);
-  font-size: 50%;
+  font-size: 8px;
   cursor: default;
   user-select: none;
   -webkit-touch-callout: none;
