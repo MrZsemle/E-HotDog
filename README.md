@@ -14,7 +14,7 @@ A small program with JQuery, maybe Cookie Clicker copy?<br /><br />
 ## Controls<br />
 
  `D` - Switch Dark and Light mode.<br /><br />
- `T` - Make draggable the Hot Dog.<br /><br />
+ `T` - Make draggable the Hotdog.<br /><br />
 
 
 
