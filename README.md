@@ -20,9 +20,9 @@ A small program with JQuery, maybe Cookie Clicker copy?<br /><br />
 
 ## Preview<br />
 
- **[Preview](https://mrzsemle.github.io/E-HotDog/)**<br /><br />
+ **[Preview](https://projects.mrzsemle.hu/E-HotDog/)**<br /><br />
 
-Yeah, it's free! *(thank you Github Pages)*<br /><br />
+([Check](https://mrzsemle.hu) my website! )<br /><br />
 
 ## Credits<br />
 
