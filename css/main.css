@@ -11,6 +11,10 @@ body, html {
   transition: background-color 0.2s;
 }
 
+body {
+  overflow: hidden;
+}
+
 .dark {
   background: rgb(50, 54, 57);
   color: rgb(84, 88, 91);

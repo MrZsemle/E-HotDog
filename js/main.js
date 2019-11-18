@@ -1,31 +1,32 @@
 $(document).ready(function () {
-    var click = 0;
-    var i = 1;
-    var ac
-    var dark
+    let click = 0;
+    let i = 1;
+    let ac
+    let dark
+    let draggable;
 
     $(".snackbar").show();
     /*$(".hotdog").hover(function () {
             setTimeout(function () {
                     $(".snackbar").slideDown();
-                    var credit = "Yes";
+                    let credit = "Yes";
                     $(".credit").text("Credits: " + credit + " (10 sec)");
                 
              }, 10000); 
         }, function () {
             setTimeout(function () {
                 $(".snackbar").slideUp();
-                var credit = "No"
+                let credit = "No"
                 $(".credit").text("Credits: " + credit + " (10 sec)");
             }, 1500); 
         }
     );*/
     $(".close").click(function (e) { 
-            $(".snackbar").slideUp();
+            $(".snackbar").animate({bottom: "-10%", opacity: "0"}, 'easeInOutExpo');
         });
 
 
-    var timeoutId = 0;
+    let timeoutId = 0;
 
     $(".hotdog").hover(function () {
         $(this).removeClass("ar");
@@ -34,25 +35,25 @@ $(document).ready(function () {
         }, function () {
             $(this).removeClass("a");
             $(this).addClass("ar");
-            $(this).removeClass("acr");
+            // $(this).removeClass("acr");
         }
     );
 
     $('.hotdog').on('mousedown touchstart', function () {
         timeoutId = setTimeout(1000);
-        var click = i++;
+        click = i++;
         console.log(click);
         $(".click").text("Click: " + click);
         $(this).removeClass("acr");
         $(this).addClass("ac");
-        var ac = "Yes";
+        ac = true;
         $(".stat").text("Pressed: " + ac);
         
     }).on('mouseup mouseleave touchend', function () {
         clearTimeout(timeoutId);
         $(this).removeClass("ac");
         $(this).addClass("acr");
-        var ac = "No";
+        ac = false;
         $(".stat").text("Pressed: " + ac);
         
     });
@@ -80,12 +81,23 @@ $(document).ready(function () {
         if (event.which == "84") {
             $(".hotdog").on("touchstart mousedown", function () {
                 $(".hotdog").draggable();
+                draggable = true;
+                $(".drag").text("Draggable: " + draggable);
             }).on("mouseup mouseleave touchend", function() {
             })
         }
     });
 
-    var elem = document.documentElement;
+    $("html").on("keydown", function () {
+        if (event.which == "82") {
+            $(".hotdog").draggable({disabled: true})
+            draggable = false;
+            $(".drag").text("Draggable: " + draggable);
+            $(".hotdog").animate({left: "", bottom: "", top: "", right: ""}, 'easeInOutExpo');
+        }
+    });
+
+    let elem = document.documentElement;
 
     $(".fullscreen").click(function (e) { 
         if (elem.requestFullscreen) {
