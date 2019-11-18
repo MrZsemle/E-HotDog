@@ -9,12 +9,14 @@ A small program with JQuery, maybe Cookie Clicker copy?<br /><br />
 
 ## Stats<br />
 `Click: 0` - The program counts the number of clicks on the hotdog.<br /><br />
-`Pressed: No` - The program monitors when the hotdog is pressed.<br /><br />
+`Pressed: false` - The program watching when the hotdog is pressed.<br /><br />
+`Draggable: false` - \*It is watching the values\*<br /><br />
 
 ## Controls<br />
 
  `D` - Switch Dark and Light mode.<br /><br />
  `T` - Make draggable the Hotdog.<br /><br />
+ `R` - Restores Hotdog position<br /><br />
 
 
 
